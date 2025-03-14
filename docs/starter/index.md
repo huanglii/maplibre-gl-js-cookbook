@@ -58,5 +58,5 @@ map.on('load', () => {
 此示例代码用于仅在加载地图的资源（包括样式）后添加图层。如果立即运行 `map.addLayer`，则会触发错误：`Error: Style is not done loading`，因为要添加图层的样式不存在。
 
 ::: tip
-有关地图图层的渲染规范，请参考：[样式规范](/mapbox-gl-js-cookbook/style-spec/)。
+有关地图图层的渲染规范，请参考：[样式规范](/style-spec/)。
 :::
