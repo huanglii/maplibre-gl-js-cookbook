@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-Hans',
-  title: "Maplibre GL JS Cookbook",
+  title: "MapLibre GL JS Cookbook",
   titleTemplate: 'NaiveMap',
   description: "地理信息可视化",
   base: '/maplibre-gl-js-cookbook/',
@@ -22,9 +22,9 @@ export default defineConfig({
       { text: '快速开始', link: '/starter/' },
       { text: '样式规范', link: '/style-spec/' },
       { text: '空间数据', link: '/data/' },
-      { text: '插件', link: '/plugins/' },
-      { text: '进阶', link: '/advance/' },
-      { text: 'DECK.GL', link: '/deck-gl/' },
+      // { text: '插件', link: '/plugins/' },
+      // { text: '进阶', link: '/advance/' },
+      // { text: 'DECK.GL', link: '/deck-gl/' },
     ],
     sidebar: {
       '/starter/': [
