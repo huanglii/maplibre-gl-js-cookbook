@@ -1,13 +1,23 @@
 {
+  "name": "maplibre-gl-js-cookbook",
+  "version": "1.0.0",
+  "description": "MapLibre GL JS Cookbook",
+  "private": true,
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
+  "author": "huangli",
+  "license": "MIT",
+  "homepage": "https://huanglii.github.io/maplibre-gl-js-cookbook",
   "dependencies": {
+    "maplibre-gl": "^5.2.0",
     "vue": "^3.5.13"
   },
   "devDependencies": {
+    "less": "^4.2.2",
+    "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "^1.6.3"
   }
 }
