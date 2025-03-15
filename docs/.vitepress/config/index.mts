@@ -26,22 +26,15 @@ export default defineConfig({
       dark: '/logo.svg',
     },
     nav: [
-      { text: '快速开始', link: '/starter/' },
+      { text: '快速开始', link: '/starter/', },
       { text: '样式规范', link: '/style-spec/' },
       { text: '空间数据', link: '/data/' },
-      // { text: '插件', link: '/plugins/' },
-      // { text: '进阶', link: '/advance/' },
-      // { text: 'DECK.GL', link: '/deck-gl/' },
     ],
     sidebar: {
       '/starter/': [
         {
           text: '快速开始',
           link: '/starter/',
-        },
-        {
-          text: '标准样式',
-          link: '/starter/standard-style/',
         },
         {
           text: '交互处理',
@@ -89,7 +82,7 @@ export default defineConfig({
       next: '下一篇',
     },
     outline: {
-      label: '页面导航',
+      label: '目录',
     },
     lastUpdated: {
       text: '最后更新于',

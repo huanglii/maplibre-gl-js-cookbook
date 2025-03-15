@@ -11,7 +11,7 @@ hero:
     alt: MapLibre GL JS Cookbook
   actions:
     - theme: brand
-      text: 开始探索
+      text: 快速开始
       link: /starter
     - theme: alt
       text: 样式规范

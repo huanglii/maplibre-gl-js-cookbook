@@ -26,7 +26,7 @@ Web 地图瓦片服务 (Web Map Tile Service，简称 `WMTS`)，标准定义了�
 
 **与 TMS 切片规则不同：**
 
-在 Mapbox GL JS 的 [vector](https://docs.mapbox.com/mapbox-gl-js/style-spec/sources/#vector) 和 [raster](https://docs.mapbox.com/mapbox-gl-js/style-spec/sources/#raster) 数据源中有一个 `scheme` 属性。该属性影响瓦片坐标 `y` 轴的方向，有两个值可选：`xyz`（默认）和 `tms`。
+在 MapLibre GL JS 的 [vector](https://maplibre.org/maplibre-style-spec/sources/#scheme) 和 [raster](https://maplibre.org/maplibre-style-spec/sources/#scheme_1) 数据源中有一个 `scheme` 属性。该属性影响瓦片坐标 `y` 轴的方向，有两个值可选：`xyz`（默认）和 `tms`。
 
 | 模式                                                              | 描述                                             | 示意图                          |
 | ----------------------------------------------------------------- | ------------------------------------------------ | ------------------------------- |

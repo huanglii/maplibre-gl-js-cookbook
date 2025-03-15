@@ -1,11 +1,13 @@
 # 标记
 
-```js
-const marker = new mapboxgl.Marker().setLngLat([30.5, 50.5]).addTo(map)
+<div class="tip custom-block" style="padding-top: 8px">
+
+API: [Marker](https://maplibre.org/maplibre-gl-js/docs/API/classes/Marker/)
+
+</div>
+
+## 创建标记
+
+```js:no-line-numbers
+const marker = new maplibregl.Marker().setLngLat([30.5, 50.5]).addTo(map)
 ```
-
-<ClientOnly>
-  <common-code-view name="starter-handlers-marker"/>
-</ClientOnly>
-
-> Marker：[Add custom icons with Markers](https://docs.mapbox.com/mapbox-gl-js/example/custom-marker-icons/)

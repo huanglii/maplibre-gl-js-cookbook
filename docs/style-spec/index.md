@@ -1,15 +1,42 @@
 # 样式规范
 
-> [Mapbox Style Specification](https://docs.mapbox.com/mapbox-gl-js/style-spec/)
+<div class="tip custom-block" style="padding-top: 8px">
+
+API: [Style Specifications](https://maplibre.org/maplibre-gl-js/docs/style-spec/)
+
+</div>
 
 样式规范是定义地图视觉外观的文档：绘制哪些数据，绘制顺序以及绘制数据时如何设置数据样式。
 
-一个样式有以下根属性：
+样式由以下[根级属性](https://maplibre.org/maplibre-style-spec/root/)组成：
 
-- 描述信息：[version](https://docs.mapbox.com/mapbox-gl-js/style-spec/root/#version), [name](https://docs.mapbox.com/mapbox-gl-js/style-spec/root/#name), [metadata](https://docs.mapbox.com/mapbox-gl-js/style-spec/root/#metadata)
-- 地图状态：[center](https://docs.mapbox.com/mapbox-gl-js/style-spec/root/#center), [zoom](https://docs.mapbox.com/mapbox-gl-js/style-spec/root/#zoom), [bearing](https://docs.mapbox.com/mapbox-gl-js/style-spec/root/#bearing), [pitch](https://docs.mapbox.com/mapbox-gl-js/style-spec/root/#pitch), [projection](https://docs.mapbox.com/mapbox-gl-js/style-spec/root/#terrain)
-- 地图要素：[sources](https://docs.mapbox.com/mapbox-gl-js/style-spec/root/#sources), [layers](https://docs.mapbox.com/mapbox-gl-js/style-spec/root/#layers), [terrain](https://docs.mapbox.com/mapbox-gl-js/style-spec/root/#terrain)
-- 其他：[sprite](https://docs.mapbox.com/mapbox-gl-js/style-spec/root/#sprite), [glyphs](https://docs.mapbox.com/mapbox-gl-js/style-spec/root/#glyphs), [light](https://docs.mapbox.com/mapbox-gl-js/style-spec/root/#light), [fog](https://docs.mapbox.com/mapbox-gl-js/style-spec/root/#fog), [transition](https://docs.mapbox.com/mapbox-gl-js/style-spec/root/#transition)
+## 描述信息
+
+- [version](https://maplibre.org/maplibre-style-spec/root/#version)
+- [name](https://maplibre.org/maplibre-style-spec/root/#name)
+- [metadata](https://maplibre.org/maplibre-style-spec/root/#metadata)
+
+## 地图状态
+
+- [center](https://maplibre.org/maplibre-style-spec/root/#center)
+- [zoom](https://maplibre.org/maplibre-style-spec/root/#zoom)
+- [bearing](https://maplibre.org/maplibre-style-spec/root/#bearing)
+- [pitch](https://maplibre.org/maplibre-style-spec/root/#pitch)
+
+## 地图要素
+
+- [sources](https://maplibre.org/maplibre-style-spec/root/#sources)
+- [layers](https://maplibre.org/maplibre-style-spec/root/#layers)
+- [terrain](https://maplibre.org/maplibre-style-spec/root/#terrain)
+
+## 其他
+
+- [sprite](https://maplibre.org/maplibre-style-spec/root/#sprite)
+- [glyphs](https://maplibre.org/maplibre-style-spec/root/#glyphs)
+- [light](https://maplibre.org/maplibre-style-spec/root/#light)
+- [transition](https://maplibre.org/maplibre-style-spec/root/#transition)
+
+## 示例
 
 ```json
 {
@@ -21,7 +48,3 @@
   "layers": [...] // 图层，将根据此数组的顺序绘制
 }
 ```
-
-::: tip 提示
-如果您是设计师或制图师，请前往 [Mapbox Studio](https://studio.mapbox.com/)。
-:::

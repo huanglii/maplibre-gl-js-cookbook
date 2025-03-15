@@ -8,6 +8,6 @@
 
 如，查询 `test:point` 集合下的所有数据：
 
-```
+```url:no-line-numbers
 https://example.com/geoserver/ogc/features/collections/test:point/items
 ```

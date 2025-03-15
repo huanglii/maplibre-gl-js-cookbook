@@ -38,7 +38,7 @@ const map = new maplibregl.Map({
 })
 ```
 
-因为 Mapbox GL JS 中的图层是异步的。因此，通常使用[事件](https://docs.mapbox.com/mapbox-gl-js/api/map/#map-events)绑定在合适的时间更改地图。例如：
+由于地图样式和数据源通常是远程加载的，为了确保正确操作地图，我们需要使用[事件](https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/MapEventType/)来监听地图的加载状态。例如：
 
 ```js
 map.on('load', () => {
@@ -54,9 +54,9 @@ map.on('load', () => {
 })
 ```
 
-此示例代码用于仅在加载地图的资源（包括样式）后添加图层。如果立即运行 `map.addLayer`，则会触发错误：`Error: Style is not done loading`，因为要添加图层的样式不存在。
-
 ## CDN
+
+也可以通过 CDN 直接在 HTML 中引入 MapLibre GL JS：
 
 ```html
 <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>

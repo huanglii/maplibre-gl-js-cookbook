@@ -4,7 +4,7 @@ import DefaultTheme from 'vitepress/theme'
 import './styles/index.less'
 
 // 使用 Vite 的 glob 导入功能
-const modules = import.meta.glob('./components/**/*.vue', { eager: true })
+const modules = import.meta.glob<string>('./components/**/*.vue', { eager: true })
 
 export default {
   extends: DefaultTheme,
