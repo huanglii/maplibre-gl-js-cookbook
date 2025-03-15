@@ -1,7 +1,7 @@
 <template>
   <div class="map-wrapper">
     <div
-      :id="mapContainer"
+      :ref="setMapContainer"
       :style="{ width: '100%', height: `${height}px`, borderRadius: '6px' }"
     ></div>
     <slot v-if="mapLoaded"></slot>
@@ -9,7 +9,6 @@
 </template>
 
 <script setup lang="ts">
-import { withBase } from 'vitepress'
 import maplibregl from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import { onMounted, ref } from 'vue'
@@ -28,13 +27,17 @@ const emit = defineEmits<{
   (e: 'load', map: maplibregl.Map): void
 }>()
 
-const mapContainer = Math.random().toString(16).substring(2)
+const mapContainer = ref<HTMLElement>()
 let map: maplibregl.Map
 let mapLoaded = ref(false)
 
+const setMapContainer = (el: HTMLElement) => {
+  mapContainer.value = el
+}
+
 onMounted(() => {
   const mapDefaultOptions: maplibregl.MapOptions = {
-    container: mapContainer,
+    container: mapContainer.value as HTMLElement,
     style: 'https://www.naivemap.com/demotiles/style.json',
     center: [104.294538, 35.860092],
     zoom: 2,
