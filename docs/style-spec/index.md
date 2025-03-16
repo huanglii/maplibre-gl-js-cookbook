@@ -41,9 +41,9 @@ API: [Style Specifications](https://maplibre.org/maplibre-gl-js/docs/style-spec/
 ```json
 {
   "version": 8, // 版本号，必须且必须为 8
-  "name": "Mapbox Streets", // 样式名称
-  "sprite": "mapbox://sprites/mapbox/streets-v8", // 雪碧图
-  "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf", // 字体
+  "name": "basic", // 样式名称
+  "sprite": "naivemap://sprites/basic", // 雪碧图
+  "glyphs": "naivemap://fonts/{fontstack}/{range}.pbf", // 字体
   "sources": {...}, // 数据源
   "layers": [...] // 图层，将根据此数组的顺序绘制
 }

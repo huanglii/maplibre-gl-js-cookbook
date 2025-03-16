@@ -1,10 +1,10 @@
 # GeoServer
 
-以 `GeoServer` 为例，对常见地图服务标准简要说明以及在 `Mapbox GL JS` 中的使用。
+以 `GeoServer` 为例，对常见地图服务标准简要说明以及在 `MapLibre GL JS` 中的使用。
 
 ## WMTS
 
-利用 `GetTile` 操作和指定输出格式即可在 Mapbox GL JS 中使用。
+利用 `GetTile` 操作和指定输出格式即可在 MapLibre GL JS 中使用。
 
 ```js
 // 栅格瓦片 image/png
@@ -52,7 +52,7 @@
 
 ## WFS
 
-利用 `GetFeature` 操作和指定输出格式即可在 Mapbox GL JS 中使用。
+利用 `GetFeature` 操作和指定输出格式即可在 MapLibre GL JS 中使用。
 
 加载示例（application/json 格式）：
 
@@ -71,7 +71,7 @@
 
 ## WMS
 
-利用 `GetMap` 操作和指定地图边框范围（`bbox`）和输出格式（`format`）即可在 Mapbox GL JS 中使用。
+利用 `GetMap` 操作和指定地图边框范围（`bbox`）和输出格式（`format`）即可在 MapLibre GL JS 中使用。
 
 加载示例（image/png 格式）：
 
@@ -85,5 +85,5 @@
 ```
 
 ::: tip
-注意 url 中的 `bbox` 参数值 `"{bbox-epsg-3857}"`。Mapbox GL JS 会自动计算地图范围替换该值，获取地图。
+注意 url 中的 `bbox` 参数值 `"{bbox-epsg-3857}"`。MapLibre GL JS 会自动计算地图范围替换该值，获取地图。
 :::
