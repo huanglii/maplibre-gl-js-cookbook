@@ -10,7 +10,6 @@
 
 <script setup lang="ts">
 import maplibregl from 'maplibre-gl'
-import 'maplibre-gl/dist/maplibre-gl.css'
 import { onMounted, ref } from 'vue'
 import { createPropHtml } from './util'
 
@@ -41,6 +40,8 @@ onMounted(() => {
     style: 'naivemap://style.json',
     center: [104.294538, 35.860092],
     zoom: 2,
+    scrollZoom: true,
+    cooperativeGestures: true,
     attributionControl: {
       compact: true,
       customAttribution: [

@@ -2,16 +2,6 @@
 
 {{ 1 + 1 }}
 
-::: sandboxrun
-
-```html
-
-<div>Sandboxrun</div>
-
-```
-
-:::
-
 :::demo src=examples/Input.vue
 :::
 
