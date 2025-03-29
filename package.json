@@ -12,12 +12,13 @@
   "license": "MIT",
   "homepage": "https://huanglii.github.io/maplibre-gl-js-cookbook",
   "dependencies": {
-    "maplibre-gl": "^5.2.0",
+    "maplibre-gl": "^5.3.0",
+    "vite-plugin-markdown-preview": "^1.1.1",
     "vue": "^3.5.13"
   },
   "devDependencies": {
     "less": "^4.2.2",
     "markdown-it-mathjax3": "^4.3.2",
-    "vitepress": "^1.6.3"
+    "vitepress": "2.0.0-alpha.4"
   }
 }

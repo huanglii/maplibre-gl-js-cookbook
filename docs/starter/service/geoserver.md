@@ -63,12 +63,6 @@
 }
 ```
 
-::: tip
-
-- WFS 会请求全部数据，不适用于大量数据。但是支持空间查询和属性查询。
-- 文档：[GeoServer Filtering](https://docs.geoserver.org/latest/en/user/filter/index.html#filtering)
-  :::
-
 ## WMS
 
 利用 `GetMap` 操作和指定地图边框范围（`bbox`）和输出格式（`format`）即可在 MapLibre GL JS 中使用。
