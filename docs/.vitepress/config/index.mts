@@ -20,7 +20,7 @@ export default defineConfig({
     nav: [
       { text: '快速开始', link: '/starter/' },
       { text: '样式规范', link: '/style-spec/' },
-      { text: '空间数据', link: '/data/' },
+      // { text: '空间数据', link: '/data/' },
     ],
     sidebar: {
       '/starter/': [
@@ -52,6 +52,22 @@ export default defineConfig({
             { text: 'OGC API', link: '/starter/service/ogcapi' },
           ],
         },
+      ],
+      '/style-spec/': [
+        { text: '样式规范', link: '/style-spec/' },
+        { text: '雪碧图', link: '/style-spec/sprite' },
+        { text: '字体', link: '/style-spec/glyphs' },
+        {
+          text: '数据源',
+          items: [
+            { text: '数据源', link: '/style-spec/sources/' },
+            { text: '瓦片', link: '/style-spec/sources/tile' },
+            { text: 'GeoJSON', link: '/style-spec/sources/geojson' },
+            { text: '图片&视频', link: '/style-spec/sources/image-video' },
+          ],
+        },
+        { text: '图层', link: '/style-spec/layers' },
+        { text: '表达式', link: '/style-spec/expression' },
       ],
     },
     socialLinks: [
