@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /starter
+      link: /starter/
     - theme: alt
       text: 样式规范
-      link: /style-spec
+      link: /style-spec/
     - theme: alt
       text: API 文档
       link: https://maplibre.org/maplibre-gl-js/docs/
