@@ -7,7 +7,7 @@
 ::: code-group
 
 ```sh [npm]
-$ npm add maplibre-gl
+$ npm i maplibre-gl
 ```
 
 ```sh [pnpm]
@@ -32,7 +32,7 @@ import 'maplibre-gl/dist/maplibre-gl.css'
 
 const map = new maplibregl.Map({
   container: 'map', // 地图容器 id
-  style: 'mapbox://styles/mapbox/streets-v11', // 样式
+  style: 'naivemap://styles/baisc', // 样式
   center: [104.294538, 35.860092], // 地图初始中心点 [经度, 维度]
   zoom: 2.4, // 地图初始缩放级别
 })

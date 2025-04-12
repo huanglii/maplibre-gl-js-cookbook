@@ -1,5 +1,7 @@
 # 控件
 
+控件（Control）是用于控制地图的交互式组件。
+
 ## 定位
 
 [GeolocateControl](https://maplibre.org/maplibre-gl-js/docs/API/classes/GeolocateControl/) 提供一个按钮，该按钮使用浏览器的 [Geolocation API](https://developer.mozilla.org/zh-CN/docs/Web/API/Geolocation) 在地图上定位用户。
