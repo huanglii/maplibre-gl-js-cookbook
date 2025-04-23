@@ -66,4 +66,6 @@ map.on('load', () => {
 />
 ```
 
-<demo html="starter.html" ssg="true" />
+## 示例
+
+<demo html="starter.html" ssg="true" title="显示地图" description="使用 MapLibre GL JS 在 HTML 元素中初始化地图。" />
