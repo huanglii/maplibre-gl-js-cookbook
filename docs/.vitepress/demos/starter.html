@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
 
 <head>
-  <title>Display a map</title>
-  <meta property="og:description" content="Initialize a map in an HTML element with MapLibre GL JS." />
-  <meta charset='utf-8'>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@5.4.0/dist/maplibre-gl.css' />
-  <script src='https://unpkg.com/maplibre-gl@5.4.0/dist/maplibre-gl.js'></script>
+  <title>显示地图</title>
+  <meta property="og:description" content="使用 MapLibre GL JS 在 HTML 元素中初始化地图。" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" />
+  <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
     }
 
     #map {
+      width: 100%;
       height: 400px;
     }
   </style>
@@ -24,12 +25,11 @@
   <div id="map"></div>
   <script>
     const map = new maplibregl.Map({
-      container: 'map', // container id
-      style: 'https://demotiles.maplibre.org/style.json', // style URL
-      center: [0, 0], // starting position [lng, lat]
-      zoom: 1, // starting zoom
-      maplibreLogo: true
-    });
+      container: 'map', // 地图容器 id
+      style: 'https://www.naivemap.com/demotiles/style.json', // 样式 URL
+      center: [104.294538, 35.860092], // 地图初始中心点 [经度, 维度]
+      zoom: 2, // 地图初始缩放级别
+    })
   </script>
 </body>
 

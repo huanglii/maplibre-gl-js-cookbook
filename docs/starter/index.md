@@ -32,9 +32,9 @@ import 'maplibre-gl/dist/maplibre-gl.css'
 
 const map = new maplibregl.Map({
   container: 'map', // 地图容器 id
-  style: 'naivemap://styles/baisc', // 样式
+  style: 'https://www.naivemap.com/demotiles/style.json', // 样式 URL
   center: [104.294538, 35.860092], // 地图初始中心点 [经度, 维度]
-  zoom: 2.4, // 地图初始缩放级别
+  zoom: 2, // 地图初始缩放级别
 })
 ```
 
