@@ -42,7 +42,3 @@ features:
 ---
 
 ---
-
-&nbsp;
-
-<MapLibreMap />

@@ -65,3 +65,5 @@ map.on('load', () => {
   rel="stylesheet"
 />
 ```
+
+<demo html="starter.html" ssg="true" />
