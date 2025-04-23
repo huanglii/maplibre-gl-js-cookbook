@@ -1,5 +1,6 @@
-import MarkdownPreview from 'vite-plugin-markdown-preview'
 import { defineConfig } from 'vitepress'
+import { vitepressDemoPlugin } from 'vitepress-demo-plugin'
+import path from 'path'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -11,6 +12,18 @@ export default defineConfig({
   head: [['link', { rel: 'icon', href: '/maplibre-gl-js-cookbook/logo.svg' }]],
   cleanUrls: true,
   lastUpdated: true,
+  markdown: {
+    lineNumbers: true,
+    image: {
+      lazyLoading: true,
+    },
+    math: true,
+    config(md) {
+      md.use(vitepressDemoPlugin, {
+        demoDir: path.resolve(__dirname, '../demos'),
+      })
+    },
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: {
@@ -20,7 +33,7 @@ export default defineConfig({
     nav: [
       { text: '快速开始', link: '/starter/' },
       { text: '样式规范', link: '/style-spec/' },
-      // { text: '空间数据', link: '/data/' },
+      { text: '空间数据', link: '/data/' },
     ],
     sidebar: {
       '/starter/': [
@@ -134,15 +147,5 @@ export default defineConfig({
         },
       },
     },
-  },
-  vite: {
-    plugins: [MarkdownPreview()],
-  },
-  markdown: {
-    lineNumbers: true,
-    image: {
-      lazyLoading: true,
-    },
-    math: true,
   },
 })

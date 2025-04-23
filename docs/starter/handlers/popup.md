@@ -6,6 +6,8 @@ API: [Popup](https://maplibre.org/maplibre-gl-js/docs/API/classes/Popup/)
 
 </div>
 
+弹窗（Popup）是一个可以在地图上显示内容的弹出窗口，通常用于查看要素的属性内容。
+
 ## 创建弹窗
 
 ```js
