@@ -21,6 +21,8 @@ export default defineConfig({
     config(md) {
       md.use(vitepressDemoPlugin, {
         demoDir: path.resolve(__dirname, '../demos'),
+        stackblitz: { show: true },
+        codesandbox: { show: true },
       })
     },
   },
@@ -33,7 +35,6 @@ export default defineConfig({
     nav: [
       { text: '快速开始', link: '/starter/' },
       { text: '样式规范', link: '/style-spec/' },
-      { text: '空间数据', link: '/data/' },
     ],
     sidebar: {
       '/starter/': [
