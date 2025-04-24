@@ -5,11 +5,11 @@ import path from 'path'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-Hans',
-  title: 'MapLibre GL JS Cookbook',
+  title: 'MapLibre/Mapbox Cookbook',
   titleTemplate: 'NaiveMap',
   description: '地理信息可视化',
-  base: '/maplibre-gl-js-cookbook/',
-  head: [['link', { rel: 'icon', href: '/maplibre-gl-js-cookbook/logo.svg' }]],
+  base: '/maplibrex-cookbook/',
+  head: [['link', { rel: 'icon', href: '/maplibrex-cookbook/logo.svg' }]],
   cleanUrls: true,
   lastUpdated: true,
   markdown: {
@@ -87,12 +87,12 @@ export default defineConfig({
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/huanglii/maplibre-gl-js-cookbook',
+        link: 'https://github.com/naivemap/maplibrex-cookbook',
       },
     ],
     editLink: {
       pattern:
-        'https://github.com/huanglii/maplibre-gl-js-cookbook/edit/main/docs/:path',
+        'https://github.com/naivemap/maplibrex-cookbook/edit/main/docs/:path',
       text: '在 GitHub 上编辑此页面',
     },
     footer: {

@@ -1,7 +1,7 @@
 {
-  "name": "maplibre-gl-js-cookbook",
+  "name": "maplibrex-cookbook",
   "version": "1.0.0",
-  "description": "MapLibre GL JS Cookbook",
+  "description": "MapLibre/Mapbox Cookbook",
   "private": true,
   "scripts": {
     "docs:dev": "vitepress dev docs",
@@ -10,7 +10,7 @@
   },
   "author": "huangli",
   "license": "MIT",
-  "homepage": "https://huanglii.github.io/maplibre-gl-js-cookbook",
+  "homepage": "https://www.naivemap.com/maplibrex-cookbook",
   "dependencies": {
     "maplibre-gl": "^5.4.0",
     "vue": "^3.5.13"
