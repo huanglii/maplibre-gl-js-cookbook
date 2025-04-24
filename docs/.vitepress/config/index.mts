@@ -8,10 +8,17 @@ export default defineConfig({
   title: 'MapLibre/Mapbox Cookbook',
   titleTemplate: 'NaiveMap',
   description: '地理信息可视化',
-  base: '/maplibrex-cookbook/',
-  head: [['link', { rel: 'icon', href: '/maplibrex-cookbook/logo.svg' }]],
+  base: '/maplibox-cookbook/',
+  head: [['link', { rel: 'icon', href: '/maplibox-cookbook/logo.svg' }]],
   cleanUrls: true,
   lastUpdated: true,
+  rewrites: {
+    'mapli/:rest*': ':rest*',
+  },
+  locales: {
+    root: { label: 'MapLibre' },
+    mapbox: { label: 'Mapbox' },
+  },
   markdown: {
     lineNumbers: true,
     image: {
@@ -105,6 +112,7 @@ export default defineConfig({
     },
     outline: {
       label: '目录',
+      level: [2, 3],
     },
     lastUpdated: {
       text: '最后更新于',

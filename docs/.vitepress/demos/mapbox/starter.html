@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <title>显示地图</title>
+  <meta property="og:description" content="使用 Mapbox GL JS 在 HTML 元素中初始化地图。" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.11.0/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.11.0/mapbox-gl.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      height: 400px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiaHVhbmdsaWkiLCJhIjoiY204OHMxdTk3MHRtZDJrc2NkbWZ5Y3RjNCJ9.tFEJ-k9dnAQSSoKOuCz5Gw'
+    const map = new mapboxgl.Map({
+      container: 'map', // 地图容器 id
+      style: 'mapbox://styles/huanglii/clm8knsuz012801r41pbwdcku', // 样式 URL
+      center: [104.294538, 35.860092], // 地图初始中心点 [经度, 维度]
+      zoom: 2, // 地图初始缩放级别
+    })
+  </script>
+</body>
+
+</html>
