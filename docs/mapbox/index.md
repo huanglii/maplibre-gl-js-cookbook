@@ -7,7 +7,7 @@ hero:
   text: ''
   tagline: 开发指南与最佳实践
   image:
-    src: /assets/images/hero.svg
+    src: /mapbox.svg
     alt: Mapbox GL JS Cookbook
   actions:
     - theme: brand

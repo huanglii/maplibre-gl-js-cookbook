@@ -5,7 +5,7 @@ import path from 'path'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-Hans',
-  title: 'MapLibre/Mapbox Cookbook',
+  title: 'MapLibre GL JS Cookbook',
   titleTemplate: 'NaiveMap',
   description: '地理信息可视化',
   base: '/maplibox-cookbook/',
