@@ -8,13 +8,10 @@ export default defineConfig({
   title: 'MapLibre GL JS Cookbook',
   titleTemplate: 'NaiveMap',
   description: '地理信息可视化',
-  base: '/maplibox-cookbook/',
-  head: [['link', { rel: 'icon', href: '/maplibox-cookbook/logo.svg' }]],
+  base: '/maplibox-gl-js-cookbook/',
+  head: [['link', { rel: 'icon', href: '/maplibox-gl-js-cookbook/logo.svg' }]],
   cleanUrls: true,
   lastUpdated: true,
-  rewrites: {
-    'mapli/:rest*': ':rest*',
-  },
   locales: {
     root: { label: 'MapLibre' },
     mapbox: { label: 'Mapbox' },
